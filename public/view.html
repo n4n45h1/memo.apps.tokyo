@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Memo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Memo</h1>
+    </div>
+    
+    <div id="passwordForm" class="password-form hidden">
+      <div class="lock-icon">🔒</div>
+      <p class="lock-text">This memo is password protected</p>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+      <button id="unlockBtn" class="btn-primary">Unlock Memo</button>
+    </div>
+    
+    <div id="memoContent" class="memo-content hidden">
+      <div class="memo-header">Memo Content</div>
+      <pre id="content"></pre>
+    </div>
+    
+    <div id="error" class="error hidden"></div>
+
+    <div class="footer">
+      <a href="/">Create New Memo</a>
+    </div>
+  </div>
+  
+  <script src="view.js"></script>
+</body>
+</html>
